@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main {
+    height: 100vh;
+    width: 100%;
+    background-color: #0C0B0B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Rubik;
+    color: #B7B7B7
+}
+
+section {
+    height: 50vh;
+    width: 50%;
+    background-color: #0F0E0E;
+}
+
+.gif-img {
+    width: 30%;
+    border-radius: 50%;
+}
+
+.first-conteiner {
+    height: 25vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.apresentation-part {
+    height: 25vh;
+    display: flex;
+    align-items: center;
+}
+
+.user-info {
+    padding: 1rem;
+}
+
+.edit-box {
+    height: 5vh;
+    width: 15%;
+    display: flex;
+    background-color: #0F0E0E;
+    cursor: pointer;
+}
+
+.blocks-part {
+    height: 25vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.projects-block, .stars-block, .followers-block {
+    padding: 1rem;
+    height: 13vh;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    border-radius: 10px;
+    font-size: 1.3vw
+}
+.projects-block h3 , .stars-block h3 , .followers-block h3 {
+    font-size: 2vw;
+}
+
+.projects-block {
+    background-color: #046313;
+}
+
+.stars-block {
+    background-color: #044A7D; 
+}
+
+.followers-block {
+    background-color: #725200;
+}
+
+@media(max-width: 864px) {
+    section {
+        height: 85vh;
+    }
+    .first-conteiner, .apresentation-part, .blocks-part{
+        height: 38vh;
+        flex-direction: column;
+    }
+    .gif-img {
+        width: 45%;
+    }
+    .user-info {
+        text-align: center;
+    }
+    .edit-box {
+        height: 38vh;
+    }
+    .projects-block, .stars-block, .followers-block {
+        margin: 1rem;
+        width: 80%
+    }
+}
+
+
+/* Preto: #0C0B0B
+Cinza: #0F0E0E
+Branco: #B7B7B7
+Verde: #046313
+Azul: #044A7D
+Amarelo: #725200 */
